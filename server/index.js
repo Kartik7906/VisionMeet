@@ -3,7 +3,9 @@
 //  handling cors ploicy here:
 const io = new Server(process.env.PORT || 8000, {
   cors: {
-    origin: "*",
+    origin: "https://vision-meet-frontend.vercel.app", // Remove trailing slash
+    methods: ["GET", "POST"], // Specify allowed methods
+    credentials: true, // Include this if you need to allow credentials
   },
 });
 
