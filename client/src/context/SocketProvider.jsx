@@ -11,7 +11,7 @@ export const useSocket = () =>{
 
 
 const SocketProvider = (props) => {
-  const socket = useMemo(() => io("localhost:8000"), []);
+  const socket = useMemo(() => io("https://vision-meet-server.vercel.app/"), []);
 
   return (
     <SocketContext.Provider value={socket}>
