@@ -24,6 +24,15 @@ Ensure you have the following installed on your machine:
 - Node.js (v14.x or higher)
 - npm (v6.x or higher)
 
+# layout one
+   ![image](https://github.com/user-attachments/assets/9e952d0b-6274-4f8a-87e3-787852fd2e44)
+
+# user one streaming:
+   ![image](https://github.com/user-attachments/assets/8b0a718e-b12d-46ab-b656-3561fae3dcdc)
+
+# user two streaming
+   ![image](https://github.com/user-attachments/assets/1271b89f-a777-4246-af10-cd50f3d8760c)
+
 ### Installation
 
 1. Clone the repository:
@@ -31,15 +40,6 @@ Ensure you have the following installed on your machine:
    ```bash
    git clone https://github.com/Kartik7906/VisionMeet.git
 
-
-   # layout one
-   ![image](https://github.com/user-attachments/assets/9e952d0b-6274-4f8a-87e3-787852fd2e44)
-
-   # user one streaming:
-   ![image](https://github.com/user-attachments/assets/8b0a718e-b12d-46ab-b656-3561fae3dcdc)
-
-   # user two streaming
-   ![image](https://github.com/user-attachments/assets/1271b89f-a777-4246-af10-cd50f3d8760c)
 
 
 
