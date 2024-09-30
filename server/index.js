@@ -3,10 +3,11 @@
 //  handling cors ploicy here:
 const io = new Server(process.env.PORT || 8000, {
   cors: {
-    origin: "https://vision-meet-frontend.vercel.app", // Remove trailing slash
-    methods: ["GET", "POST"], // Specify allowed methods
-    credentials: true, // Include this if you need to allow credentials
+    origin: "https://vision-meet-frontend.vercel.app",
+    methods: ["GET", "POST"],
+    credentials: true,
   },
+  transports: ['websocket'], // Add this line
 });
 
 //  track room id with room number:
