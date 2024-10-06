@@ -3,7 +3,7 @@
 //  handling cors ploicy here:
 const io = new Server({
   cors: {
-    origin: "https://vision-meet-frontend.vercel.app/", 
+    origin: "https://vision-meet-frontend.vercel.app", 
     methods: ["GET", "POST"]
   }
 });
