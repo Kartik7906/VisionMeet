@@ -11,9 +11,13 @@ export const useSocket = () => {
     return socket;
 }
 
-const SocketProvider = ({ children }) => {
-    const socket = useMemo(() => io("https://vision-meet-server.vercel.app/"), []);
+const SocketProvider = (props) => {
+  const socketUrl =
+    process.env.NODE_ENV === 'production'
+      ? "https://vision-meet-server.vercel.app/"
+      : "http://localhost:8000"; 
 
+   const socket = useMemo(() => io(socketUrl), [socketUrl]);
     useEffect(() => {
         return () => {
             socket.disconnect(); // Clean up the socket connection on unmount
