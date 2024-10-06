@@ -18,11 +18,6 @@ const SocketProvider = (props) => {
       : "http://localhost:8000"; 
 
    const socket = useMemo(() => io(socketUrl), [socketUrl]);
-    useEffect(() => {
-        return () => {
-            socket.disconnect(); // Clean up the socket connection on unmount
-        };
-    }, [socket]);
 
     return (
         <SocketContext.Provider value={socket}>
