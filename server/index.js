@@ -1,13 +1,11 @@
  const { Server } = require("socket.io");
 
 //  handling cors ploicy here:
-const io = new Server(process.env.PORT || 8000, {
+const io = new Server({
   cors: {
-    origin: "https://vision-meet-frontend.vercel.app",
-    methods: ["GET", "POST"],
-    credentials: true,
-  },
-  transports: ['websocket'], // Add this line
+    origin: "https://vision-meet-frontend.vercel.app/", 
+    methods: ["GET", "POST"]
+  }
 });
 
 //  track room id with room number:
